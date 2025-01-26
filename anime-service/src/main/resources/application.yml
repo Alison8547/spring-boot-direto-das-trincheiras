@@ -4,3 +4,13 @@ spring:
 #server:
 #  servlet:
 #    context-path: /${spring.application.name}
+  threads:
+    virtual:
+      enabled: true
+
+server:
+  error:
+    include-stacktrace: on_param
+  tomcat:
+    threads:
+      max: 20
